@@ -10,17 +10,23 @@ body {
 }
 
 a {
+  color: #fff;
   text-decoration: none;
+}
+
+li {
+  font-size: 0.8rem;
+  list-style: circle;
 }
 
 .home-button {
   cursor: pointer;
   padding: 5px 10px;
-  background-color: lightskyblue;
+  background-color: red;
   @include easeOut();
 
   &:hover {
     background-color: #000;
-    color: #87CEFA;
+    color: red;
   }
 }
