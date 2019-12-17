@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+import Loader from 'react-loader-spinner';
 import axios from 'axios';
 
 const Movie = (props) => {
@@ -18,13 +20,19 @@ const Movie = (props) => {
 
   },[]);
   
-  const saveMovie = () => {
+  const saveMovie = props => {
     const addToSavedList = props.addToSavedList;
     addToSavedList(movie)
   }
 
   if (!movie) {
-    return <div>Loading movie information...</div>;
+    return <Loader
+              type="Bars"
+              color="yellow"
+              width={100}
+              height={100}
+              timeout={3000}  
+            />;
   }
 
   const { title, director, metascore, stars } = movie;

@@ -30,6 +30,7 @@ const App = () => {
           match={props.match}
           history={props.history}
           location={props.location}
+          onClick={addToSavedList}
         />
         )}
       />
