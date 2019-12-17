@@ -30,7 +30,7 @@ const App = () => {
           match={props.match}
           history={props.history}
           location={props.location}
-          addToSavedList={props.addToSavedList}
+          addToSavedList={addToSavedList}
         />
         )}
       />
