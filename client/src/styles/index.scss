@@ -1,8 +1,9 @@
+@import './vars';
 @import './saved-list';
 @import './movie-card';
 
 body {
-  background-color: #f2f2f2;
+  background-image: radial-gradient(#000, #555);
   font-family: sans-serif;
   margin: 0 auto;
   padding: 0;
@@ -16,6 +17,7 @@ a {
   cursor: pointer;
   padding: 5px 10px;
   background-color: lightskyblue;
+  @include easeOut();
 
   &:hover {
     background-color: #000;
