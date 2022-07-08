@@ -1,0 +1,32 @@
+@import './vars';
+@import './saved-list';
+@import './movie-card';
+
+body {
+  background-image: radial-gradient(#000, #555);
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+  font-size: 0.8rem;
+  list-style: circle;
+}
+
+.home-button {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: red;
+  @include easeOut();
+
+  &:hover {
+    background-color: #000;
+    color: red;
+  }
+}
